@@ -167,11 +167,11 @@ def wave():
   if win == False and len(enemies) == 0:
     wave_counter += 1
     print(wave_counter)
-    if wave_counter == 5:
+    if wave_counter == 6:
       boss = Enemy(random.randint(0, 600), -10, 5, (200, 200))
       boss.isboss = True
       enemies.append(boss)
-    elif wave_counter == 6:
+    elif wave_counter == 7:
       win = True
 
     else:
